@@ -1,5 +1,5 @@
-# Responsive Resume Cv Smith
-### Responsive Resume Cv Smith
+# Responsive Resume Cv Mohan
+### Responsive Resume Cv Mohan
 
 - Responsive Resume Cv Website Using HTML CSS And JavaScript
 - Contains a mobile navigation with icons.
