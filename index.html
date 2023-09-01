@@ -1,63 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <title>Mohan KB</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-  <link href="main.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="main.js"></script>
-</head>
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-<body>
-  <div class="container-fluid p-5 bg-primary text-white text-center">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Mohan KB</h1>
-      </div>
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <p><i class="bi bi-phone"></i> 7259615473</p>
-      </div>
-      <div class="col-sm-6">
-        <p><i class="bi bi-inbox-fill"></i> mohan.kb5473@gmail.com</p>
-      </div>
-    </div>
-  </div>
+        <title>Responsive resume cv</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__log">Mohan</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active__link">
+                                <i class="nav__icon bx bx-home"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#profile" class="nav__link">
+                                <i class="nav__icon bx bx-user"></i>Profile
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                <i class="nav__icon bx bx-book"></i>Education
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="nav__icon bx bx-receipt"></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                <i class="nav__icon bx bx-briefcase-alt"></i>Experience
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#certifications" class="nav__link">
+                                <i class="nav__icon bx bx-award"></i>Certifications
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#references" class="nav__link">
+                                <i class="nav__icon bx bx-link-external"></i>References
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </nav>
+        </header>
 
-  <div class="px-4 py-5 my-5 text-center">
-    <h1 class="display-5 fw-bold">Centered hero</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-        popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
-        prebuilt components, and powerful JavaScript plugins.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-      </div>
-    </div>
-  </div>
-  <div class="b-example-divider"></div>
-  <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold">Centered screenshot</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-      </div>
-    </div>
-    <div class="overflow-hidden" style="max-height: 30vh;">
-      <div class="container px-5">
-        <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-      </div>
-    </div>
-  </div>
-</body>
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!--========== HOME ==========-->
+                    <section class="home" id="home">
+                      <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/perfil.jpg" alt="" class="home__img">
+                            <h1 class="home__title">KB <b>Mohan</b></h1>
+                            <h3 class="home__Profesion">Full stack developer</h3>
+
+                            <div>
+                                <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
+                            </div>
+                        </div>
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class="bx bx-map home__icon"></i>Addresss
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-envelope home__icon"></i>emailid
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-phone home__icon"></i>Phone number
+                            </span>
+                        </div>
+                      </div>
+                      <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+                      <i class="bx bx-download generate-pdf" title="Download PDF" id="resume-button"></i>
+                    </section>          
+                    
+                    <!--========== SOCIAL ==========-->
+                    <section class="social section">
+                        <h2 class="section-title">Social</h2>
+                        <div class="social__container bd-grid">
+                            <a href="" target="_blank" class="social__link">
+                                <i class="bx bxl-linkedin-square social__icon"></i>@manu
+                            </a>
+                            <a href="" target="_blank" class="social__link">
+                                <i class="bx bxl-facebook social__icon"></i>@manu
+                            </a>
+                            <a href="" target="_blank" class="social__link">
+                                <i class="bx bxl-instagram social__icon"></i>@manu
+                            </a>
+                        </div>
+                    </section> 
+
+                    <!--========== PROFILE ==========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Profile</h2>
+                        <p class="profile__description">I am a person, responsible with their work during working hours. Finish various technical and higher studies at large universities. I have several years of experience and achievements in the labor field.
+                        </p>
+                    </section>
+                    
+                    <!--========== EDUCATION ==========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Education</h2>
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Degree</h3>
+                                    <span class="education__studies">B.E Electronics</span>
+                                    <span class="education__year">2010-2014</span>
+                                </div>
+                            </div>
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Degree</h3>
+                                    <span class="education__studies">B.E Electronics</span>
+                                    <span class="education__year">2010-2014</span>
+                                </div>
+                            </div>
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                </div>
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Degree</h3>
+                                    <span class="education__studies">B.E Electronics</span>
+                                    <span class="education__year">2010-2014</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!--========== SKILLS  ==========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Skills</h2>
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Pega PRPC
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Pega RPA
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>JAVA
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>SQL
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>HTML, CSS, JS, Jquery
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+
+                <div class="resume__right">
+                    <!--========== EXPERIENCE ==========-->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Senior Manager</h3>
+                                    <span class="experience__company">2021 - Present | Morgan Stanley</span>
+                                    <p class="experience__description">I am a person, responsible with their work during working hours. Finish various technical and higher studies at large universities. I have several years of experience and achievements in the labor field.
+                                    </p>
+                                </div>
+                            </div>
+                    </section>
+
+                    <!--========== CERTIFICATES ==========-->
+                    <section class="certificate section" id="certifications">
+                        <h2 class="section-title">Certification</h2>
+                        <div class="certification__container bd-grid">
+                            <div class="certification__content">
+                                <h3 class="certification__title">Pega CSSA</h3>
+                                <p class="certification__description">I am a person, responsible with their work during working hours. Finish various tec</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== REFERENCES ==========-->
+                    <section class="references section" id="references">
+                        <h2 class="section-title">References</h2>
+                        <div class="references__container bd-grid">
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Vice Presidence | Morgan Stanley</span>
+                                <h3 class="references__title">Divya Sridhar</h3>
+                                <ul class="references__contact">
+                                    <li>Phone: xx-xx-xx-xxx</li>
+                                    <li>Email: divya.sridhar@morganstanley.com</li>
+                                </ul>
+                            </div>
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Director | Pegasystems</span>
+                                <h3 class="references__title">Suraj Victor</h3>
+                                <ul class="references__contact">
+                                    <li>Phone: xx-xx-xx-xxx</li>
+                                    <li>Email: divya.sridhar@morganstanley.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== LANGUAGES ==========-->
+                    <section class="languages section">
+                        <h2 class="section-title">Languages</h2>
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Kannada
+                            </li>
+                            <li class="skills__name">
+                                <span class="languages__circle"></span>English
+                            </li>
+                            <li class="skills__name">
+                                <span class="languages__circle"></span>Telugu
+                            </li>
+                            <li class="skills__name">
+                                <span class="languages__circle"></span>Hindi
+                            </li>
+                            <li class="skills__name">
+                                <span class="languages__circle"></span>Tamil
+                            </li>
+                        </ul>
+                        
+                    </section>
+                    
+                    <!--========== INTERESTS ==========-->
+                    <section class="interests section">
+                        <h2 class="section-title">Interests</h2>
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <i class="bx bx-headphone interests__icon"></i>
+                                <span class="interests__name">Music</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class="bx bxs-plane-alt interests__icon"></i>
+                                <span class="interests__name">Travel</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class="bx bx-dumbbell interests__icon"></i>
+                                <span class="interests__name">Fitness</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class='bx bx-book interests__icon'></i>
+                                <span class="interests__name">Learning</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class='bx bx-search-alt interests__icon'></i>
+                                <span class="interests__name">Surfing net</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>        
+        </main>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+
+        <!--========== HTML2PDF ==========-->
+        <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
